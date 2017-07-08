@@ -7,9 +7,9 @@ var map = L.map('map', {
 
 var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 var osmAttrib='Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
-var osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 16, attribution: osmAttrib});
+var osm = new L.TileLayer(osmUrl, {minZoom: 1, maxZoom: 19, attribution: osmAttrib});
 
-map.setView(new L.LatLng(116.7500000, 39.4666700),12);
+map.setView(new L.LatLng(51.7500000, 19.4666700),12);
 map.addLayer(osm);
 
 var drawnItems = new L.FeatureGroup();
